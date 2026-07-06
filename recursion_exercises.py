@@ -20,3 +20,13 @@ def numbers_to_n(n):
     
     return numbers_to_n(n-1)+[n]
 print(numbers_to_n(5))
+
+#mission 4
+def count_items(lst):
+    if lst==[]:
+        return 0
+    lst.pop(0)
+    num_len=1
+    return num_len+count_items(lst)
+print(count_items(["a","b","c"]))
+
