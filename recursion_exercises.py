@@ -56,6 +56,15 @@ def max_number(numbers):
         return max_of_rest
 print(max_number([4,9,2,11,6]))
 
+#mission 7
+def reverse_string(text):
+    if len(text)==1:
+        return text
+    letter=text[0]
+    next1=text[1:]
+    return reverse_string(next1)+letter
+print(reverse_string("python"))
+
 
 
 
