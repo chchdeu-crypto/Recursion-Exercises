@@ -12,3 +12,11 @@ def factorial(n):
         return 1
     return n*factorial(n-1)
 print(factorial(5))
+
+#mission 3
+def numbers_to_n(n):
+    if n<1:
+        return []
+    
+    return numbers_to_n(n-1)+[n]
+print(numbers_to_n(5))
