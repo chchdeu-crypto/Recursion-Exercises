@@ -30,3 +30,18 @@ def count_items(lst):
     return num_len+count_items(lst)
 print(count_items(["a","b","c"]))
 
+#mission 5
+def count_evens(numbers):
+    if numbers==[]:
+        return 
+    current=numbers.pop(0)
+    if current%2==0:
+        count=1
+        return count +count_evens(numbers)
+    else:
+        count=0
+        
+    return count +count_evens(numbers)
+print(count_evens([4,7,10,3,8]))
+
+
