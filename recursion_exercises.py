@@ -33,7 +33,7 @@ print(count_items(["a","b","c"]))
 #mission 5
 def count_evens(numbers):
     if numbers==[]:
-        return 
+        return 0
     current=numbers.pop(0)
     if current%2==0:
         count=1
@@ -43,5 +43,19 @@ def count_evens(numbers):
         
     return count +count_evens(numbers)
 print(count_evens([4,7,10,3,8]))
+
+#mission 6
+def max_number(numbers):
+    if len(numbers)==1:
+        return numbers[0]
+    first_num=numbers.pop(0)
+    max_of_rest=max_number(numbers)
+    if first_num>max_of_rest:
+        return first_num
+    else:
+        return max_of_rest
+print(max_number([4,9,2,11,6]))
+
+
 
 
