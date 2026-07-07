@@ -78,5 +78,14 @@ def is_palindrome(txt):
         return False
 print(is_palindrome("level"))
 
-
-
+#mission 9
+def count_value(lst,value):
+    if len(lst)==0:
+        return 0
+    first_num=lst.pop(0)
+    if first_num==value:
+        count=1
+        return count+count_value(lst,value)
+    else:
+        return count_value(lst,value)
+print(count_value([1,2,2,3,2],2))    
