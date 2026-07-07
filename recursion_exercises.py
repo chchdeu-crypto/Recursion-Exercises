@@ -65,6 +65,18 @@ def reverse_string(text):
     return reverse_string(next1)+letter
 print(reverse_string("python"))
 
+#mission 8
+def is_palindrome(txt):
+    if len(txt)==1:
+        return True
+    
+    letter=txt[0]
+    last=txt[-1:]
+    if letter==last:
+        return is_palindrome(txt[1:-1])
+    else:
+        return False
+print(is_palindrome("level"))
 
 
 
