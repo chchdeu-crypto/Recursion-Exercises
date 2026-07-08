@@ -88,4 +88,15 @@ def count_value(lst,value):
         return count+count_value(lst,value)
     else:
         return count_value(lst,value)
-print(count_value([1,2,2,3,2],2))    
+print(count_value([1,2,2,3,2],2))  
+
+#mission 10
+def fibonacci(n):
+    if n==0:
+        return 0
+    if n==1:
+        return 1
+    
+    return fibonacci(n-1)+fibonacci(n-2)
+print(fibonacci(6))
+print(fibonacci(0))
